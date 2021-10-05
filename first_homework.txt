@@ -1,0 +1,41 @@
+1) Посмотреть где я (pwd)
+2) Создать папку (mkdir first)
+3) Зайти в папку (cd first)
+4) Создать 3 папки (mkdir first second thirteen)
+5) Зайти в любоую папку (cd TAB выбор папки)
+6) Создать 5 файлов (3 txt, 2 json) (touch first.txt second.txt thirteen.txt first.json second.json)
+7) Создать 3 папки (mkdir first second thirteen)
+8. Вывести список содержимого папки (ls -la)
+9) + Открыть любой txt файл (cat first.txt)
+10) + написать туда что-нибудь, любой текст. (wim first.txt ESC -- INSERT -- ввод текста)
+11) + сохранить и выйти. (SHIFT :wq)
+12) Выйти из папки на уровень выше (cd .. или cd ../..(каждое двоеточие на уровень выше))
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. (mv first.txt second.txt first)
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. (cp first.txt second.txt first)
+15) Найти файл по имени (find -name "thirteen.txt")
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. (grep "Class 1" first.txt) поиск конкретных слов в файле и вывод 
+17) вывести несколько первых строк из текстового файла (head -2 first.txt)
+18) вывести несколько последних строк из текстового файла (tail -2 first.txt)
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. (less first.txt) частичный просмотр файла(команда не загружает его полностью) и поиск
+20) вывести дату и время (date "+ДАТА: %D%nВРЕМЯ: %T" или date)
+=========
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request (curl http://162.55.220.72:5005/terminal-hw-request)
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+#!/bin/bash
+echo "Go to folder"
+cd dir1
+echo "Create a folder"
+mkdir first second thirteen
+echo "Go to"
+cd first 
+echo "Create files"
+touch first.txt second.txt thirteen.txt first.json second.json
+echo "Create folders"
+mkdir first second thirteen
+echo "Print folder"
+ls -la
+echo "Moving"
+mv first.txt second.txt first
