@@ -1,8 +1,11 @@
-"name" : "Alyona"
-"age" : "00"
-"pet " : "1"
-"the salary" : "500$"
-"Movie" : "Balto"
-"TV series" : "American Horror Story"
-"Food" : "pumpkin soup"
-"Season" : "Summer Country - Australia"
+{
+    "name":"Alyona",
+    "age": 0,
+    "pet ": 1,
+    "the salary":"500$",
+    "Movie":"Balto",
+    "TV series":"American Horror Story",
+    "Food":"pumpkin soup",
+    "Season": "Summer",
+    "Country" : "Australia"
+}
